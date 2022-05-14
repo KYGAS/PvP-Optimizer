@@ -1,7 +1,7 @@
 {
     "files": {
         "README.md": "4a51a060b4c81fa10e7834f2e647a867f662d12b67101a5048e053a2f1bccd15",
-        "index.js": "5840dad4f783003c20b2aaa1722fe7e4e40976a77f765e1dc0430ba8d314a64f",
+        "index.js": "f6890398ad3b0dc421c2881afde3f694b1f7fe73e1c12f693bec4c641bf07753",
         "migrator.js": "a81e6f8e9991f875a08cd5cdeaa48c0819ad958e6d85ef80becbcaa8398069c3",
         "module.json": "2513be37c27e00aefc9d97fe4561299bfa32240d027e5bc201c948e044abfc5d",
         "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d"
@@ -25,6 +25,7 @@
         "S_FEARMOVE_END": "*",
         "S_FEARMOVE_STAGE": "*",
         "S_INSTANCE_ARROW": "*",
+        "S_LOGIN": "*",
         "S_MOUNT_VEHICLE": "*",
         "S_MOUNT_VEHICLE_EX": "*",
         "S_SOCIAL": "*",

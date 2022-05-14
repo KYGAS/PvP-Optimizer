@@ -8,6 +8,7 @@ module.exports = function optimize(mod){
 	
 	let friends = [/*1,*/ 2, 6, /*7,*/ 30];
 	let enemies = [3, 5, 8, 28];
+	let gameId = 0n;
 	
 	mod.hook("S_SPAWN_USER", '*', e=>{
 		console.log(e)
@@ -19,6 +20,10 @@ module.exports = function optimize(mod){
 	})
 	mod.hook("S_DESPAWN_USER", '*', e=>{
 		delete users[e.gameId];
+	})
+	
+	mod.hook("S_LOGIN", '*', e=>{
+		gameId = e.gameId;
 	})
 	
 	mod.hook("S_CHANGE_RELATION", '*', e=>{
@@ -192,6 +197,7 @@ module.exports = function optimize(mod){
 	}
 	
 	function handleVehicle(pkt){
+		if(pkt.gameId == gameId) return;
 		if(spawned[pkt.gameId]) return;
 		else{
 			users[pkt.gameId].mount = pkt.id;
@@ -200,6 +206,7 @@ module.exports = function optimize(mod){
 	}	
 	
 	function handleVehicleEx(pkt){
+		if(pkt.target == gameId) return;
 		if(spawned[pkt.target]) return;
 		else{
 			users[pkt.target].vehicleEx = pkt.vehicle;
