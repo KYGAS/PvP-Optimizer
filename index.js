@@ -11,7 +11,6 @@ module.exports = function optimize(mod){
 	let gameId = 0n;
 	
 	mod.hook("S_SPAWN_USER", '*', e=>{
-		console.log(e)
 		users[e.gameId] = e;
 		spawned[e.gameId] = false;
 		if(!mod.settings.enabled) return;
