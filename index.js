@@ -1,5 +1,12 @@
 module.exports = function optimize(mod){
 	
+	if(mod.settings.enabled == undefined) mod.settings.enabled = true;
+	if(mod.settings.showparty == undefined) mod.settings.showparty = true;
+	if(mod.settings.showguild == undefined) mod.settings.showguild = true;
+	if(mod.settings.showraid == undefined) mod.settings.showraid = true;
+	if(mod.settings.showall == undefined) mod.settings.showall = false;
+	
+	
 	let users = {}
 	
 	let spawned = {}
@@ -19,6 +26,22 @@ module.exports = function optimize(mod){
 	})
 	mod.hook("S_DESPAWN_USER", '*', e=>{
 		delete users[e.gameId];
+		delete spawned[e.gameId];
+		delete heldAbnorms[e.gameId]
+	})
+	
+	mod.hook("S_LOAD_TOPO", '*', e=>{
+		
+		for(let key of Object.keys(users) ){
+			if(spawned[users[key].gameId]){
+				mod.send("S_DESPAWN_USER", '*', users[key]);
+				spawned[users[key].gameId] = false;
+			}
+		}
+		
+		users = {};
+		spawned = {};
+		heldAbnorms = {};
 	})
 	
 	mod.hook("S_LOGIN", '*', e=>{
@@ -29,7 +52,7 @@ module.exports = function optimize(mod){
 		if(mod.settings.notify){
 			setTimeout(()=>{
 				mod.command.message("PvP Optimizer loaded -> Auto Update not supported on Menma.");
-				mod.command.message("Version : " + 1);
+				mod.command.message("Version : " + 2);
 				mod.command.message("To make sure you have the latest version visit : ");
 				mod.command.message("github.com/KYGAS/PvP-Optimizer");
 				mod.command.message("To disable this notif. Type /8 pvpopt notify.");
@@ -204,8 +227,11 @@ module.exports = function optimize(mod){
 		}else{
 			delete heldAbnorms[pkt.target][pkt.id];
 		}
-		if(spawned[pkt.target]) return;
-		else return false;
+		// if(spawned[pkt.target]) return;
+		// else {
+			// mod.command.message("Stopped!")
+			// return false;
+		// }
 	}
 	
 	function handleVehicle(pkt){
