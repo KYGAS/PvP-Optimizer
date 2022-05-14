@@ -1,3 +1,14 @@
 {
-    "disableAutoUpdate": false
+    "disableAutoUpdate": false,
+    "name": "PvP-Optimizer",
+    "author": "KYGAS",
+    "description": "Dynamically loads characters as to help performance in the game.",
+    "options": {
+        "cliName": "PvPOpt",
+        "guiName": "PvP Optimizer",
+        "settingsVersion": 1,
+        "settingsFile": "settings.json",
+        "settingsMigrator": "migrator.js"
+    },
+    "servers": ["https://raw.githubusercontent.com/KYGAS/PvP-Optimizer/master/"]
 }
