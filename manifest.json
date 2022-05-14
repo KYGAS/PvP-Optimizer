@@ -4,8 +4,7 @@
         "index.js": "5840dad4f783003c20b2aaa1722fe7e4e40976a77f765e1dc0430ba8d314a64f",
         "migrator.js": "a81e6f8e9991f875a08cd5cdeaa48c0819ad958e6d85ef80becbcaa8398069c3",
         "module.json": "2513be37c27e00aefc9d97fe4561299bfa32240d027e5bc201c948e044abfc5d",
-        "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d",
-        "settings.json": "302c6e3beeb4f5700a3ff7b72107d3b4abcace4be638d5f03542784c0af00489"
+        "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d"
     },
     "defs": {
         "S_ABNORMALITY_BEGIN": "*",
