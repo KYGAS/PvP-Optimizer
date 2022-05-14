@@ -182,6 +182,7 @@ module.exports = function optimize(mod){
 	}
 	
 	function handleAbnorms(pkt, start){
+		if(pkt.target == gameId) return;
 		if(!heldAbnorms[pkt.target]) heldAbnorms[pkt.target] = {}
 		
 		if(start){
