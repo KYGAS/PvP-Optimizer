@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "data": {
+        "enabled": true,
+		"showParty": true,
+		"showGuild": true,
+		"showRaid": true,
+		"showAll": false
+    }
+}

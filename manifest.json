@@ -1,0 +1,14 @@
+{
+    "files": {
+        "README.md": "47305ba96652098edb081c2210d63a322460994645fc86f549cfaed2d402da73",
+        "index.js": "3fbb40bd6fa944b00db5233da0086032c491e00a79b46e8b5ecc7a363b778398",
+        "module.json": "99b10524d0ce69e3db514099a6fd3c22a7037b1e61f43fcf2a28a9a912692acb",
+        "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d",
+        "settings.json": "e2ec9f34d6dfba37f907f3cc7ff4b08d78ca33fdf2a18b6a3cc363eb8a95adeb"
+    },
+    "defs": {
+        "S_CHANGE_RELATION": "*",
+        "S_DESPAWN_USER": "*",
+        "S_SPAWN_USER": "*"
+    }
+}

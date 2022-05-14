@@ -1,0 +1,6 @@
+{
+	"main": "./index.js",
+	"name": "PvP-Optimizer",
+	"author": "KYGAS",
+	"description": "Dynamically loads characters as to help performance in the game."
+}
