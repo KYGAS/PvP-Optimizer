@@ -1,14 +1,44 @@
 {
     "files": {
-        "README.md": "47305ba96652098edb081c2210d63a322460994645fc86f549cfaed2d402da73",
-        "index.js": "3fbb40bd6fa944b00db5233da0086032c491e00a79b46e8b5ecc7a363b778398",
-        "migrator.js": "bd72e2f305845462c44ad95dccc659de59037bd8b48bdd15bfd3ab18b9b36116",
+        "README.md": "4a51a060b4c81fa10e7834f2e647a867f662d12b67101a5048e053a2f1bccd15",
+        "index.js": "5840dad4f783003c20b2aaa1722fe7e4e40976a77f765e1dc0430ba8d314a64f",
+        "migrator.js": "a81e6f8e9991f875a08cd5cdeaa48c0819ad958e6d85ef80becbcaa8398069c3",
         "module.json": "2513be37c27e00aefc9d97fe4561299bfa32240d027e5bc201c948e044abfc5d",
-        "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d"
+        "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d",
+        "settings.json": "302c6e3beeb4f5700a3ff7b72107d3b4abcace4be638d5f03542784c0af00489"
     },
     "defs": {
+        "S_ABNORMALITY_BEGIN": "*",
+        "S_ABNORMALITY_DAMAGE_ABSORB": "*",
+        "S_ABNORMALITY_END": "*",
+        "S_ABNORMALITY_FAIL": "*",
+        "S_ABNORMALITY_REFRESH": "*",
+        "S_ABNORMALITY_RESIST": "*",
+        "S_ACTION_END": "*",
+        "S_ACTION_STAGE": "*",
         "S_CHANGE_RELATION": "*",
+        "S_CREATURE_LIFE": "*",
+        "S_CREATURE_ROTATE": "*",
+        "S_DEFEND_SUCCESS": "*",
+        "S_DESPAWN_PROJECTILE": "*",
         "S_DESPAWN_USER": "*",
-        "S_SPAWN_USER": "*"
+        "S_END_USER_PROJECTILE": "*",
+        "S_FEARMOVE_END": "*",
+        "S_FEARMOVE_STAGE": "*",
+        "S_INSTANCE_ARROW": "*",
+        "S_MOUNT_VEHICLE": "*",
+        "S_MOUNT_VEHICLE_EX": "*",
+        "S_SOCIAL": "*",
+        "S_SPAWN_PROJECTILE": "*",
+        "S_SPAWN_USER": "*",
+        "S_START_USER_PROJECTILE": "*",
+        "S_STICK_TO_USER_END": "*",
+        "S_STICK_TO_USER_START": "*",
+        "S_UNMOUNT_VEHICLE": "*",
+        "S_UNMOUNT_VEHICLE_EX": "*",
+        "S_USER_LOCATION": "*",
+        "S_USER_LOCATION_IN_ACTION": "*",
+        "S_USER_MOVETYPE": "*",
+        "S_USER_STATUS": "*"
     }
 }

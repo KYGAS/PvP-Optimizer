@@ -10,10 +10,10 @@ Dynamically loads characters as to help performance in the game.
 /8 pvpopt FEATURE
 
 - features :
-- - showAll
-- - showParty
-- - showRaid
-- - showGuild
+- - showall
+- - showparty
+- - showraid
+- - showguild
 
 # Contact
 

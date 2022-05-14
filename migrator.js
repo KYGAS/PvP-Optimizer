@@ -1,9 +1,9 @@
 const DefaultSettings = {
     "enchant": true,
-    "showParty": true,
-    "showGuild": true,
-    "showRaid": true,
-    "showAll": true,
+    "showparty": true,
+    "showguild": true,
+    "showraid": true,
+    "showall": false,
 }
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
