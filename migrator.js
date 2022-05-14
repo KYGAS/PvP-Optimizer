@@ -4,6 +4,7 @@ const DefaultSettings = {
     "showguild": true,
     "showraid": true,
     "showall": false,
+    "notify": true
 }
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {

@@ -25,6 +25,18 @@ module.exports = function optimize(mod){
 		gameId = e.gameId;
 	})
 	
+	mod.hook("S_SPAWN_ME", '*', e=>{
+		if(mod.settings.notify){
+			setTimeout(()=>{
+				mod.command.message("PvP Optimizer loaded -> Auto Update not supported on Menma.");
+				mod.command.message("Version : " + 1);
+				mod.command.message("To make sure you have the latest version visit : ");
+				mod.command.message("github.com/KYGAS/PvP-Optimizer");
+				mod.command.message("To disable this notif. Type /8 pvpopt notify.");
+			}, 5000);
+		}
+	})
+	
 	mod.hook("S_CHANGE_RELATION", '*', e=>{
 		handleUser(users[e.target], e.relation)
 	})

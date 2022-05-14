@@ -1,8 +1,8 @@
 {
     "files": {
-        "README.md": "4a51a060b4c81fa10e7834f2e647a867f662d12b67101a5048e053a2f1bccd15",
-        "index.js": "03a94ffafa3a1833e74df7fcebff604789e6cf735782e2d86c13e88cfeb30797",
-        "migrator.js": "a81e6f8e9991f875a08cd5cdeaa48c0819ad958e6d85ef80becbcaa8398069c3",
+        "README.md": "a92682bbb9dc57c33695fa87e53d5a1b6e12cf166096f4d04cc584ba1f05d376",
+        "index.js": "433afc585ed687ebe98f45be5f80d31b615a7fb0c9cf3d9cedab675ef42571eb",
+        "migrator.js": "a3839caed3d6d6b94c8f20a5cef8717a490c130d1c56fd7ca6c096fada9dbadd",
         "module.json": "2513be37c27e00aefc9d97fe4561299bfa32240d027e5bc201c948e044abfc5d",
         "package.json": "06dbafce0e732213da27ebc2f7797903fafad51112ee333cbd9554e57b9d5f1d"
     },
@@ -29,6 +29,7 @@
         "S_MOUNT_VEHICLE": "*",
         "S_MOUNT_VEHICLE_EX": "*",
         "S_SOCIAL": "*",
+        "S_SPAWN_ME": "*",
         "S_SPAWN_PROJECTILE": "*",
         "S_SPAWN_USER": "*",
         "S_START_USER_PROJECTILE": "*",

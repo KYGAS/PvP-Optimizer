@@ -1,0 +1,11 @@
+{
+    "version": 1,
+    "data": {
+        "enabled": true,
+        "showparty": true,
+        "showguild": true,
+        "showraid": true,
+        "showall": false,
+        "notify": true
+    }
+}

@@ -1,3 +1,5 @@
+## Version 1
+
 # PvP Optimizer
 Dynamically loads characters as to help performance in the game.
 
